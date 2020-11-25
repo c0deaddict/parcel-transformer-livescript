@@ -1,0 +1,26 @@
+{
+  "name": "parcel-transformer-livescript",
+  "version": "2.0.0-beta.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c0deaddict/parcel-transformer-livescript.git"
+  },
+  "main": "lib/LiveScriptTransformer.js",
+  "source": "src/LiveScriptTransformer.js",
+  "engines": {
+    "node": ">= 10.0.0",
+    "parcel": "^2.0.0-alpha.1.1"
+  },
+  "dependencies": {
+    "@parcel/plugin": "2.0.0-beta.1",
+    "@parcel/source-map": "2.0.0-alpha.4.16",
+    "@parcel/utils": "2.0.0-beta.1",
+    "livescript": "^1.6.0",
+    "nullthrows": "^1.1.1",
+    "semver": "^5.4.1"
+  },
+  "peerDependencies": {
+    "@parcel/core": "2.0.0-beta.1"
+  }
+}
