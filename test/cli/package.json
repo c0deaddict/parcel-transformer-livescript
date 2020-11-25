@@ -1,0 +1,11 @@
+{
+  "name": "my-project",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build ./src/index.ls"
+  },
+  "devDependencies": {
+    "parcel": "next",
+    "parcel-transformer-livescript": "file:../.."
+  }
+}

@@ -2,3 +2,5 @@ node_modules
 .log
 .parcel-cache
 yarn-error.log
+dist
+/lib

@@ -1,10 +1,10 @@
 {
   "name": "parcel-transformer-livescript",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.1.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/c0deaddict/parcel-transformer-livescript.git"
+    "url": "git+https://github.com/c0deaddict/parcel-transformer-livescript.git"
   },
   "main": "lib/LiveScriptTransformer.js",
   "source": "src/LiveScriptTransformer.js",
@@ -22,5 +22,24 @@
   },
   "peerDependencies": {
     "@parcel/core": "2.0.0-beta.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/c0deaddict/parcel-transformer-livescript/issues"
+  },
+  "homepage": "https://github.com/c0deaddict/parcel-transformer-livescript#readme",
+  "description": "Livescript transformer for Parcel v2",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@parcel/babel-preset": "^2.0.0-alpha.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src --out-dir lib",
+    "prepublish": "npm run compile"
+  },
+  "author": "Jos van Bakel"
 }
