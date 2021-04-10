@@ -23,7 +23,7 @@ export default (new Transformer({
       let map = null;
       if (output.map) {
         map = new SourceMap(options.projectRoot);
-        map.addRawMappings(output.map);
+        map.addRawMappings(output.map.toJSON());
       }
 
       asset.setCode(output.code);
