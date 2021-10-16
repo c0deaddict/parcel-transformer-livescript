@@ -6,7 +6,7 @@ import {relativeUrl} from '@parcel/utils';
 
 export default (new Transformer({
   async transform({asset, options}) {
-    let sourceFileName: string = relativeUrl(
+    let sourceFileName = relativeUrl(
       options.projectRoot,
       asset.filePath,
     );
@@ -23,7 +23,7 @@ export default (new Transformer({
       let map = null;
       if (output.map) {
         map = new SourceMap(options.projectRoot);
-        map.addRawMappings(output.map.toJSON());
+        map.addVLQMap(JSON.parse(output.map));
       }
 
       asset.setCode(output.code);
@@ -34,4 +34,4 @@ export default (new Transformer({
 
     return [asset];
   },
-}): Transformer);
+}));

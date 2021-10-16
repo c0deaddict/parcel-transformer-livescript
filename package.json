@@ -1,6 +1,6 @@
 {
   "name": "parcel-transformer-livescript",
-  "version": "2.0.0-beta.1.1",
+  "version": "2.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -10,18 +10,18 @@
   "source": "src/LiveScriptTransformer.js",
   "engines": {
     "node": ">= 10.0.0",
-    "parcel": "^2.0.0-beta.2"
+    "parcel": "^2.0.0"
   },
   "dependencies": {
-    "@parcel/plugin": "2.0.0-beta.2",
-    "@parcel/source-map": "^2.0.0-alpha.4.21",
-    "@parcel/utils": "2.0.0-beta.2",
+    "@parcel/plugin": "2.0.0",
+    "@parcel/source-map": "^2.0.0",
+    "@parcel/utils": "^2.0.0",
     "livescript": "^1.6.0",
     "nullthrows": "^1.1.1",
     "semver": "^5.4.1"
   },
   "peerDependencies": {
-    "@parcel/core": "2.0.0-beta.2"
+    "@parcel/core": "^2.0.0"
   },
   "bugs": {
     "url": "https://github.com/c0deaddict/parcel-transformer-livescript/issues"
@@ -33,13 +33,11 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
-    "@babel/core": "^7.12.9",
-    "@parcel/babel-preset": "^2.0.0-alpha.2"
+    "@babel/core": "^7.12.9"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "babel src --out-dir lib",
-    "prepublish": "npm run compile"
+    "prepare": "babel src --out-dir lib"
   },
   "author": "Jos van Bakel"
 }
